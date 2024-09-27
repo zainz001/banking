@@ -15,9 +15,12 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
+
 .glassmorphism {
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(4px);
@@ -167,11 +170,11 @@
   }
 
   .profile-img {
-    @apply flex-center absolute -top-8 size-24 rounded-full bg-gray-100 border-8 border-white p-2 shadow-profile;
+    @apply flex-center absolute top-8 size-24 rounded-full bg-gray-100 border-8 border-white p-2 shadow-profile;
   }
 
   .profile-details {
-    @apply flex flex-col pt-24;
+    @apply flex flex-col pt-36 ;
   }
 
   .profile-name {
@@ -205,7 +208,7 @@
   }
 
   .transactions-account-balance {
-    @apply flex-center flex-col  gap-2 rounded-md bg-blue-25/20 px-4 py-2 text-white;
+    @apply flex-center flex-col gap-2 rounded-md bg-blue-25/20 px-4 py-2 text-white;
   }
 
   .header-box {
@@ -365,8 +368,9 @@
 
   /* Sidebar */
   .sidebar {
-    @apply sticky left-0 top-0 flex h-screen w-fit flex-col  justify-between border-r border-gray-200 bg-white pt-8 text-white max-md:hidden sm:p-4 xl:p-6 2xl:w-[355px];
-  }
+    @apply sticky left-0 top-0 flex h-screen w-fit flex-col justify-between border-r border-gray-200 bg-white pt-8 text-white max-md:hidden sm:p-4 xl:p-6;
+    @apply sm:w-[300px] xl:w-[265px] 2xl:w-[355px]; /* Adjust the widths for different breakpoints */
+}
 
   .sidebar-logo {
     @apply 2xl:text-26 font-ibm-plex-serif text-[26px] font-bold text-black-1 max-xl:hidden;
